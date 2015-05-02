@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+#from django.conf import settings
+#from django.contrib.staticfiles import views
+
 
 urlpatterns = [
-    url(r'^$', 'data_mining.k_means_R.output', name='home'),
+    url(r'^$', 'data_mining.views.index', name='home'),
+    url(r'^kmeans$', 'data_mining.kmeans_view.output', name='kmeans_output'),
     url(r'^admin/', include(admin.site.urls)),
 ]

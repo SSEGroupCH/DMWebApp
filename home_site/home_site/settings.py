@@ -100,3 +100,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Static dir
+STATICFILES_DIRS = [
+    "/Users/will/Documents/DMWebApp/home_site/data_mining/static",
+]
